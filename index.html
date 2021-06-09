@@ -48,7 +48,7 @@
  
     <body>
         <div id="box">
-            <h1>距离国庆节，还有</h1>
+            <h1>距离第二轮背景文件提交，还有</h1>
             <div id="time">
                 <span id="day">**天</span>
                 <strong><span id="hour">**时</span></strong>
@@ -66,7 +66,7 @@
             setInterval(TimeRow, 1000)
  
             function TimeRow() {
-                var end = new Date('2020-10-1 0:0:0');
+                var end = new Date('2021-6-28 23:59:59');
                 var start = new Date();
                 var time = getInterval(start, end);
                 setInnerText(daySpan, time.day+'天');
