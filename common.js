@@ -20,11 +20,11 @@ function getInterval(start, end) {
   // 求 相差的天数/小时数/分钟数/秒数
   var day, hour, minute, second;
  
-  // 两个日期对象，相差的秒数
+  // 两个日期对象，相差的秒数，下面错了一处，已改成向下取整
   // interval = interval / 1000;
   interval /= 1000;
  
-  day = Math.round(interval / 60 / 60 / 24);
+  day = Math.floor(interval / 60 / 60 / 24);
   hour = Math.round(interval / 60 / 60 % 24);
   minute = Math.round(interval / 60 % 60);
   second = Math.round(interval % 60);
