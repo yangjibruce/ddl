@@ -25,9 +25,9 @@ function getInterval(start, end) {
   interval /= 1000;
  
   day = Math.floor(interval / 60 / 60 / 24);
-  hour = Math.round(interval / 60 / 60 % 24);
-  minute = Math.round(interval / 60 % 60);
-  second = Math.round(interval % 60);
+  hour = Math.floor(interval / 60 / 60 % 24);
+  minute = Math.floor(interval / 60 % 60);
+  second = Math.floor(interval % 60);
  
   return {
     day: day,
